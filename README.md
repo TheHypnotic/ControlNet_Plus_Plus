@@ -19,6 +19,10 @@ pip3 install "mmsegmentation>=1.0.0"
 pip3 install mmdet
 pip3 install clean-fid
 pip3 install torchmetrics
+pip3 install einops
+pip3 install opencv-python-headless
+# if it didn't work"
+pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.1.0/index.html
 ```
 
 ## 🕹️ Data Preperation
