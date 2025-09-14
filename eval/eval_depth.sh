@@ -2,7 +2,7 @@
 # export CONTROLNET_DIR="lllyasviel/control_v11f1p_sd15_depth"  # Eval ControlNet
 export CONTROLNET_DIR="checkpoints/depth/controlnet"  # Eval our ControlNet++
 # How many GPUs and processes you want to use for evaluation.
-export NUM_GPUS=8
+export NUM_GPUS=1
 # Guidance scale and inference steps
 export SCALE=7.5
 export NUM_STEPS=20
