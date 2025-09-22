@@ -10,11 +10,16 @@
 
 ## 🕹️ Environments
 ```bash
+# CUDA 12.1
+conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+
+pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
+
 git clone https://github.com/liming-ai/ControlNet_Plus_Plus.git
 pip3 install -r requirements.txt
 pip3 install -U openmim
 mim install mmengine
-mim install "mmcv==2.1.0"
+# mim install "mmcv==2.1.0"
 pip3 install "mmsegmentation>=1.0.0"
 pip3 install mmdet
 pip3 install clean-fid
@@ -23,6 +28,7 @@ pip3 install einops
 pip3 install opencv-python-headless
 # if it didn't work"
 pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.1.0/index.html
+pip install diffusers==0.29.0  # Replace with a version known to work with PyTorch 2.1.1
 ```
 
 ## 🕹️ Data Preperation
